@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <script>
+      /*Exercice 1*/
       /*Version one*/
 
       /*
@@ -20,6 +21,8 @@
       */
 
       /*Version two*/
+
+      /*
       let currentyear = new Date().getFullYear();
       let birthyear = prompt("Qu'elle est votre année de naissance ?");
 
@@ -31,6 +34,24 @@
         console.log("Matrix");
       } else {
         console.log("Evil Dead");
+      }
+      */
+
+      /*Exercice 2 (A x B = X est positif/négatif)*/
+
+      const a = prompt("Rentrez la valeur de A");
+      const b = prompt("Rentrez la valeur de B");
+      const x = a * b;
+      let signe;
+      if (isNaN(x)) {
+        console.log("Veuillez rentrez des valeurs corrects");
+      } else {
+        if (x < 0) {
+          signe = "négatif";
+        } else {
+          signe = "positif";
+        }
+        console.log(`${a} x ${b} = ${x} est ${signe}`);
       }
     </script>
   </head>
