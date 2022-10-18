@@ -6,13 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <script>
-      const ageUtilisateur = prompt("Qu'elle est votre âge ?");
+      /*Version one*/
 
+      /*
+      const ageUtilisateur = prompt("Qu'elle est votre âge ?");
       if (ageUtilisateur <= "13") {
         console.log("Lilo et Stitch");
       } else if (ageUtilisateur < "18") {
         console.log("Matrix");
       } else{
+        console.log("Evil Dead");
+      }
+      */
+
+      /*Version two*/
+      let currentyear = new Date().getFullYear();
+      let birthyear = prompt("Qu'elle est votre année de naissance ?");
+
+      let age = currentyear - birthyear;
+
+      if (age <= "13") {
+        console.log("Lilo et Stitch");
+      } else if (age < "18") {
+        console.log("Matrix");
+      } else {
         console.log("Evil Dead");
       }
     </script>
