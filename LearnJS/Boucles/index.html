@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Boucle</title>
+    <script>
+      //EXERCICE 1
+      //on demande à l'utilisateur un chiffre entre 0 & 10
+      //on vérifie bien qu'il est entre 0 et 10
+      //si oui alors afficher tous les chiffres qui sont en dessous
+      //sinon on affiche mess error
+
+      /*
+      let valeur = prompt("Rentrez chiffre entre : 0 et 10 ");
+
+      if (valeur >= 0 && valeur <= 10) {
+        for (let i = valeur; i >= 0; i--) {
+          console.log(i);
+        }
+      } else {
+        console.log("Erreur veuillez rentrer un chiffre correct !");
+      }
+      */
+
+      //EXERCICE 2
+
+      let random=Math.floor(Math.random() * 100)+1;
+      let guess = random
+      let chiffre = prompt("Votre chiffre ?") * 1;
+
+      while (chiffre != guess) {
+        if (chiffre < guess) {
+          console.log("Votre chiffre est trop petit");
+        } else if (chiffre > guess) {
+          console.log("Votre chiffre est trop grand");
+        }
+        chiffre = prompt("Veuillez rentrer un nouveau chiffre") * 1;
+      }
+      console.log("Vous avez gagner ! le chiffre était bien: " + guess);
+    </script>
+  </head>
+  <body></body>
+</html>
